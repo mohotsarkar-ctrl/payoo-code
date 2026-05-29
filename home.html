@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo / Home</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- Tailwind/daisyUI -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">  
+    <!-- Css Style -->
+     <style>
+        *{
+            font-family: "Outfit", sans-serif;
+        }
+     </style>
+</head>
+<body class="min-h-screen max-w-md bg-base-200 w-11/12 mx-auto">
+    <section class="mt-4">
+        <header class="flex justify-between"> 
+            <div class="flex gap-2">
+                <img src="assets/logo.png" alt="" class="max-w-[60px]">
+                <div>
+                    <h2 class="text-[18px] font-extrabold">$<span id="balance">45000</span></h2>
+                    <p class="text-neutral text-gray-500/80">Available Balance</p>
+                </div>
+            </div>
+            <button class="btn rounded-xl"><a href="index.html" class="flex gap-1 items-center"><img src="assets/Frame.png" alt=""></i>Log Out</a></button>
+        </header>
+    </section>
+
+    <script src="script/home.js"></script>
+</body>
+</html>
