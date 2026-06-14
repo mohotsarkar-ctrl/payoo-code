@@ -23,7 +23,7 @@
      </style>
 </head>
 <body class="min-h-screen max-w-md bg-base-200 w-11/12 mx-auto">
-    <section class="pt-5 mb-[32px] sticky top-0 bg-base-200 z-50">
+    <section class="pt-5 mb-[32px] sticky top-0 bg-red-100/30 z-50">
         <header class="flex justify-between p-3 border-b-1 border-gray-400/30 "> 
             <div class="flex gap-2 ">
                 <img src="assets/logo.png" alt="" class="max-w-[60px]">
@@ -41,11 +41,11 @@
             <p class="text-gray-500">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
         </div>
         <div class="buttons grid grid-cols-3 gap-5">
-            <div class="btn flex-col py-5 h-full btn-primary btn-soft">
+            <div onclick="showOnly('add-money')" class="btn flex-col py-5 h-full btn-primary btn-soft">
                 <img src="assets/opt-1.png" alt="">
                 <p>Add Money</p>
             </div>
-            <div class="btn flex-col py-5 h-full btn-primary btn-soft">
+            <div onclick="showOnly('cashout')" class="btn flex-col py-5 h-full btn-primary btn-soft">
                 <img src="assets/opt-2.png" alt="">
                 <p>Cashout</p>
             </div>
@@ -67,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section id="add-money">
+    <section id="add-money" class="hidden">
         <h2 class="text-[18px] font-semibold">Add Money</h2>
         <div class="cashout-form">
             <div class="card-body bg-white rounded-[30px]">
@@ -112,6 +112,7 @@
             </div>
         </div>
     </section>
+    <script src="script/machine.js"></script>
     <script src="script/addMoney.js"></script>
     <script src="script/home.js"></script>
 </body>
